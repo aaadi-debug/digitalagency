@@ -1,0 +1,219 @@
+/* 2. */
+
+.services-section-2 {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 10rem 0;
+}
+
+.services-section-2-para {
+    font-size: 18px;
+    color: gray;
+    line-height: 1.5;
+}
+
+.best-for-you {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0 4rem 0;
+}
+
+.best-div img  {
+    width: 85px;
+}
+
+.best-div p {
+    font-size: 16px;
+    color: gray;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .services-section-2 {
+        flex-direction: column;
+        padding: 8rem 0 2rem 0;
+    }
+
+    .services-section-2-wrapper-1 img {
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+
+    .best-for-you {
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+}
+
+
+/* 3. */
+.services-section-3 {
+    background-image: url(../../assets/services_bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 10rem 10rem 6rem 10rem;
+}
+
+.services-section-3-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.services-section-3-wrapper-1 {
+    /* border: 1px solid red; */
+    padding-top: 18rem;
+}
+
+.srv-heading {
+    /* border: 1px solid red; */
+    padding-right: 14rem;
+    margin-bottom: 3rem;
+}
+
+.services-section-3-wrapper-2 {
+    /* border: 1px solid red; */
+    padding-top: 8rem;
+}
+
+/* .services-section-3-wrapper-3 {
+    border: 1px solid red;
+} */
+
+/* ----- srv-card -------- */
+
+.srv-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    margin-bottom: 4rem;
+}
+
+.srv-card img {
+    width: 113px;
+    margin-bottom: 2rem;
+}
+
+.srv-card p {
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+}
+
+
+/* ----------------------- */
+
+@media (max-width: 768px) {
+    .services-section-3 {
+        background-position: top center;
+        padding: 6rem 0 ;
+    }
+
+    .services-section-3-wrapper {
+        flex-direction: column;
+    }
+    
+    .services-section-3-wrapper-1 {
+        padding-top: 0rem;
+    }
+    
+    .srv-heading {
+        padding-right: 20rem;
+    }
+    
+    .services-section-3-wrapper-2 {
+        padding-top: 0rem;
+    }
+}
+
+/* 4. */
+.services-section-4 {
+    background-color: #ffffff;
+    padding: 6rem 0 12rem 8rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.services-section-4-wrapper-1 {
+    padding-top: 12rem;
+}
+
+.services-section-4-para {
+    font-size: 18px;
+    color: gray;
+    line-height: 1.5;
+}
+
+.services-section-4-wrapper-1 form {
+    padding-top: 2rem;
+}
+
+.services-section-4-wrapper-1 form .input-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.services-section-4-wrapper-1 form input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    width: 100%; 
+    margin: 1rem 2rem 1rem 0;
+    padding: 0.8rem 0;
+}
+
+.services-section-4-wrapper-1 button {
+    outline: none;
+    border: none;
+    background: transparent; 
+    margin-top: 3rem;
+}
+
+.services-section-4-wrapper-1 button a {
+    text-decoration: none;
+    padding: 1.6rem 2.4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(75deg,var(--textgradient_color1),var(--textgradient_color2) 80%);
+    border-radius: 4px;
+}
+
+.services-section-4-wrapper-1 button a:hover {
+    background: linear-gradient(125deg, var(--textgradient_color2) 40%, var(--textgradient_color1));
+    transition: all 1.8s;
+}
+
+.services-section-4-wrapper-2 img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .services-section-4 {
+        padding: 0 2rem 12rem 2rem;    
+        flex-direction: column;
+    }
+    
+    .services-section-4-wrapper-1 {
+        padding-top: 8rem;
+    }
+    
+    .services-section-4-wrapper-1 form .input-div {
+        flex-direction: column;
+    }
+    
+    .services-section-4-wrapper-2 img {
+        width: 100%;
+        margin-top: 6rem;
+    }
+    
+    
+}

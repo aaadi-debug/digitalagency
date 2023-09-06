@@ -1,0 +1,115 @@
+.error-section {
+    background-image: url(../assets/404.png);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50%;
+    padding: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.error-container {
+    /* border: 1px solid #fff; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-wrapper {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.error-wrapper h1 {
+    font-size: 400px;
+    line-height: 0.8;
+}
+
+.error-wrapper h1 span{
+    display: inline-block;
+}
+
+.planet-wrapper {
+    /* border: 1px solid #fff; */
+    display: inline-block;
+}
+
+.planet {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url(../assets/planet-img.jpg);
+    background-size: cover;
+    animation: rotate 10s linear infinite;
+    transition: transform .2s linear,-webkit-transform .2s linear;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    box-shadow: inset 20px 0 40px 6px rgba(0,0,0,.25);
+  }
+
+  .planet-ring {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url(../assets/planet-ring..png);
+    background-size: cover;
+    /* animation: rotate 10s linear infinite; */
+    /* transform-style: preserve-3d; */
+    
+    -webkit-transform: rotateX(50deg) scaleX(1.1) scaleY(3);
+    transform: rotateX(55deg) scaleX(1.1) scaleY(3);
+    transform: rotate(55deg) scaleX(1.4) scaleY(0.6);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2;
+    -webkit-animation: rotate_circle 1s linear infinite;
+    animation: rotate_circle 1s linear infinite;
+    margin-top: -300px;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.error-wrapper .btn-div {
+    margin: 4rem 0 6rem 0;
+}
+
+.error-wrapper .btn-div button {
+    border: none;
+    outline: none;
+}
+
+.error-wrapper .btn-div button a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.6rem 3rem;
+    border-radius: 4px;
+    background: linear-gradient(75deg,var(--textgradient_color1),var(--textgradient_color2) 80%);
+    /* background-image: linear-gradient(96deg, #9289f1 0%,#6254e7 51%, #8378fa 100%); */
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.error-wrapper .btn-div button a:hover {
+    background: linear-gradient(125deg, var(--textgradient_color2) 40%, var(--textgradient_color1));
+    transition: all 1.8s;
+}

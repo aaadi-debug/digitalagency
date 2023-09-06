@@ -1,0 +1,108 @@
+:root {
+    --textgradient_color1: #FF4C6C;
+    --textgradient_color2: #FA9D4D;
+}
+
+.ele-section-three {
+    background-color: #ffffff;
+    background-image: url(../../assets/work_together_bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* border: 1px solid red; */
+}
+
+.ele-three-container {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.ele-three-widget-wrap {
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.ele-three-wrap-content {
+    padding-left: 8rem !important;
+}
+
+.ele-three-widget-wrap h1 {
+    font-size: 7rem;
+
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    background-image: linear-gradient(75deg,var(--textgradient_color1),var(--textgradient_color2) 80%);
+}
+
+.ele-three-widget-wrap p:first-of-type {
+    text-align: left;
+    color: #3B3663;
+    font-size: 18px;
+}
+
+.ele-three-widget-wrap a {
+    text-decoration: none !important;
+    font-size: 2.8rem;
+    color: #000;
+}
+
+.ele-three-widget-wrap p {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.ele-three-widget-wrap button {
+    outline: none;
+    border: none;
+    background: transparent; 
+    margin-top: 3rem;
+}
+
+.ele-three-widget-wrap button a {
+    text-decoration: none;
+    padding: 1.6rem 2.4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(75deg,var(--textgradient_color1),var(--textgradient_color2) 80%);
+    border-radius: 4px;
+}
+
+.ele-three-widget-wrap button a:hover {
+    background: linear-gradient(125deg, var(--textgradient_color2) 40%, var(--textgradient_color1));
+    transition: all 1.8s;
+}
+
+.ele-three-widget-wrap img {
+    /* border: 1px solid red; */
+    width: 90%;
+    margin-left: -2rem;
+}
+
+@media (max-width: 768px) {
+    .ele-three-widget-wrap h1 {
+        font-size: 5.4rem;
+    }
+    
+    .ele-three-wrap-content {
+        padding-left: 3rem !important;
+    }
+
+    .ele-three-container {
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+    
+    .ele-three-widget-wrap img {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8rem;
+    }
+
+    
+}

@@ -1,0 +1,70 @@
+:root {
+    --textgradient_color1: #FF4C6C;
+    --textgradient_color2: #FA9D4D;
+}
+
+.contact-thank-section {
+    background-image: url(../assets/404.png);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50%;
+    padding: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.contact-thank-container {
+    /* border: 1px solid #fff; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-wrapper {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.thank-wrapper p:nth-child(1) {
+    font-size: 200px;
+    font-weight: 600;
+    line-height: 0.8;
+}
+
+.thank-wrapper .btn-div {
+    margin: 4rem 0 6rem 0;
+}
+
+.thank-wrapper .btn-div button {
+    border: none;
+    outline: none;
+}
+
+.thank-wrapper .btn-div button a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.6rem 3rem;
+    border-radius: 4px;
+    background: linear-gradient(75deg,var(--textgradient_color1),var(--textgradient_color2) 80%);
+    /* background-image: linear-gradient(96deg, #9289f1 0%,#6254e7 51%, #8378fa 100%); */
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.thank-wrapper .btn-div button a:hover {
+    background: linear-gradient(125deg, var(--textgradient_color2) 40%, var(--textgradient_color1));
+    transition: all 1.8s;
+}

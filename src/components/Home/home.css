@@ -1,0 +1,135 @@
+:root {
+    --textgradient_color1: #FF4C6C;
+    --textgradient_color2: #FA9D4D;
+}
+
+.elementor-section {
+    background-color: #0F2545;
+    background-image: url(../../assets/home_bg.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 820px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid yellow; */
+}
+  
+.elementor-heading {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 92px;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin-top: 10rem;
+  
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    /* text-fill-color: rgba(0,0,0,0); */
+    background-image: linear-gradient(75deg,var(--textgradient_color1),var(--textgradient_color2) 80%);
+    /* border: 1px solid red; */
+}
+
+.typing-effect-strings {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 92px;
+    font-weight: 700;
+    line-height: 1.3em;
+    /* border: 1px solid white; */
+  
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    /* text-fill-color: rgba(0,0,0,0); */
+    background-image: linear-gradient(75deg,var(--textgradient_color1),var(--textgradient_color2) 80%);
+    /* border: 1px solid red; */
+    margin-top: -2rem;
+}
+
+.typed_widget {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #fff; */
+}
+
+
+.para_widget {
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.elementor-contact-button {
+    text-align: center;
+    margin: 4rem 0;    
+}
+
+.elementor-contact-button button {
+    outline: none;
+    border: none;
+}
+
+.elementor-contact-button button a {
+  text-decoration: none;
+  padding: 1.6rem 2.4rem;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.elementor-contact-button button a:hover {
+    background: linear-gradient(75deg,var(--textgradient_color1),var(--textgradient_color2) 80%);
+    color: #fff;
+    transition: 0.8s;
+}
+
+
+@media (max-width: 768px) {
+
+    .elementor-section {
+        height: 450px;
+        width: 100%;
+    
+    }
+    
+    .elementor-heading {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 1.3em;
+        margin-top: 6rem;
+        text-align: center;
+    }
+    
+    .typing-effect-strings {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 1.3em;
+        margin-top: 0rem;
+    }
+
+    .para_widget {
+        font-size: 1.8rem;
+    }
+
+    .elementor-contact-button {
+        margin-top: 6rem;  
+    }
+    
+    .elementor-contact-button button {
+        border-radius: 6px;
+        background: #fff;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+}
